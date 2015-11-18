@@ -20,14 +20,56 @@
     </div>
 
     <div class="row video-container">
-      <div class="small-10 columns small-centered">
-        <div class="video-player"></div>
+      <div class="iframe-container small-12 columns small-centered">
+        <div id="video-player"></div>
+      </div>
+    </div>
+    
+    <div class="row video-link-container">
+      <div class="small-8 columns small-centered">
+        <div class="video-link"><input type="text" class="video-link" id="video-link-input" placeholder="Try your own youtube video!"></div>
       </div>
     </div>
 
+    <div class="row audio-options-container">
+      <ul class="small-block-grid-3 large-block-grid-6">
+        <li class="audio-option">
+          <div data-song="cheery"class="audio-button">
+            <h4>Cheery</h4>
+          </div>
+        </li>
+        <li class="audio-option">
+          <div data-song="dramatic"class="audio-button">
+            <h4>Dramatic</h4>
+          </div>
+        </li>
+        <li class="audio-option">
+          <div data-song="saddening"class="audio-button">
+            <h4>Saddening</h4>
+          </div>
+        </li>
+        <li class="audio-option">
+          <div data-song="focused" class="audio-button">
+            <h4>Focused</h4>
+          </div>
+        </li>
+        <li class="audio-option">
+          <div data-song="angry" class="audio-button">
+            <h4>Angry</h4>
+          </div>
+        </li>
+        <li class="audio-option">
+          <div data-song="romantic" class="audio-button">
+            <h4>Romantic</h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <audio src loop id="music-tag"></audio>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
