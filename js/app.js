@@ -81,6 +81,7 @@ function onYouTubeIframeAPIReady(){
 
 function onPlayerReady(event){
 	event.target.mute();
+	setTimeout(function(){$('.video-link').css('opacity', 1)}, 10000)
 	console.log(event.target)
 }
 

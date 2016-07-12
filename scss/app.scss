@@ -55,10 +55,15 @@ body {
 
 		}
 		.audio-selected {
-			background-color: green;
+			background-color: #27ae60;
 
 		}
 	}
+}
+
+.video-link {
+	opacity: 0;
+	transition:opacity 1s linear;
 }
 
 #music-tag{
